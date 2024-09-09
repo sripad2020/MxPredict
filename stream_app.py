@@ -34,7 +34,7 @@ def neuclotide_features(seq):
         features[trimer] = trimer_count[trimer]
     return features
 
-atgc=st.text_input("Enter the ATGC sequence")
+atgc=st.text_input("Enter the nucleotide sequence")
 
 if st.button("click for prediction") and atgc:
     col = atgc.split(',')
